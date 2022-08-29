@@ -8,8 +8,8 @@ static OS_ALWAYS_INLINE void dcq(void) {
     int c = 1;
     if (c > sqrt(a*a+b*b+c*c)) {
         __asm__ volatile(
-                         ".long 0x11111111\n"
-                         ".long 11111111\n"
+                         ".long 0x12345678\n"
+                         ".long 12345678\n"
                          );
     }
 }
